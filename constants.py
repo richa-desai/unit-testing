@@ -21,5 +21,5 @@ TOP_BOWLER_2015 = "Top 10 economical bowlers in the year 2015"
 # numeric constants
 
 # File names
-CSV_FILE_DELIVERY = 'mock_deliveries.csv'
-CSV_FILE_MATCHES = 'mock_matches.csv'
+CSV_FILE_DELIVERY = 'deliveries.csv'
+CSV_FILE_MATCHES = 'matches.csv'

@@ -25,13 +25,15 @@ def bar_plot(bar_plot_data: dict, xlabel: str, ylabel: str, title: str):
 
 def get_match_ids_of_a_year(year: str, matches_csv: str):
     ''' function to get match ids of year 2016'''
-    matches_reader = csv.reader(open(r"matches.csv", encoding="utf-8"))
-    filtered_matches = list(
-        filter(lambda match: year == match[1], matches_reader))
 
-    match_ids_of_2016 = []
-    for match in filtered_matches:
-        match_ids_of_2016.append(match[0])
+    with open(matches_csv, encoding="utf-8") as inputfile:
+        matches_reader = csv.DictReader(inputfile)
+        match_ids_of_2016 = []
+
+        for match in matches_reader:
+            if match['season'] == year:
+                match_ids_of_2016.append(match['id'])
+
     return match_ids_of_2016
 
 

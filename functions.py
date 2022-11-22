@@ -18,6 +18,8 @@ def bar_plot(bar_plot_data: dict, xlabel: str, ylabel: str, title: str):
     plt.title(title)
     plt.tight_layout()
     plt.xticks(x_axis_keys)
+    # show plot
+    plt.show()
 
 
 def stacked_chart_plot(stacked_chart_data: dict, x_lable: str, y_lable: str, title: str):

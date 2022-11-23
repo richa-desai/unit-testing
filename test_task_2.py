@@ -3,7 +3,7 @@ import unittest
 from task_2 import calculate, transform
 
 class TestTask1(unittest.TestCase):
-    ''' Test Class for Task 1 '''
+    ''' Test Class for Task 2 '''
     season_victory_details = {2015: {'Kolkata Knight Riders': 1, 'Chennai Super Kings': 1},
                                2016: {'Royal Challengers Bangalore': 1, 'Mumbai Indians': 1}}
     season_victory_counts = [[0, 1, 1, 0], [1, 0, 0, 1]]
